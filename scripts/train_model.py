@@ -27,4 +27,4 @@ pipeline = Pipeline([
 pipeline.fit(X, y)
 
 # Čuvanje modela
-joblib.dump(pipeline, "models/product_classifier.pkl")
+joblib.dump(pipeline, "models/product_classifier.pkl", compress=3)
